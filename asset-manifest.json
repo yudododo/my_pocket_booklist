@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/my_pocket_booklist/static/css/main.bb6d320c.css",
+    "main.js": "/my_pocket_booklist/static/js/main.86133ca2.js",
+    "static/js/453.6d94b67f.chunk.js": "/my_pocket_booklist/static/js/453.6d94b67f.chunk.js",
+    "index.html": "/my_pocket_booklist/index.html",
+    "main.bb6d320c.css.map": "/my_pocket_booklist/static/css/main.bb6d320c.css.map",
+    "main.86133ca2.js.map": "/my_pocket_booklist/static/js/main.86133ca2.js.map",
+    "453.6d94b67f.chunk.js.map": "/my_pocket_booklist/static/js/453.6d94b67f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb6d320c.css",
+    "static/js/main.86133ca2.js"
+  ]
+}
