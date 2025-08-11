@@ -89,7 +89,7 @@ function BookList() {
                 to={`/books/${book.id}/detail`}>
                 <CardMedia
                   component="img"
-                  image={book.coverImage || 'https://i.postimg.cc/SRbgm8XJ/notFound.png'}
+                  image={`${process.env.PUBLIC_URL}${book.coverImage}` || `${process.env.PUBLIC_URL}/img/notFound.png`}
                   alt={book.title}
                    sx={{
                     width: '100%',
@@ -98,7 +98,7 @@ function BookList() {
                   }}
                   onError={(e) => {
                     e.target.onerror = null; // 防止無限觸發
-                    e.target.src = 'https://i.postimg.cc/SRbgm8XJ/notFound.png'; // 預設圖片
+                    e.target.src = `${process.env.PUBLIC_URL}/img/notFound.png`; // 預設圖片
                   }}
                 />
                 <CardContent sx={{ pb:1 }}>

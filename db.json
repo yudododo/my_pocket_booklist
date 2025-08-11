@@ -5,7 +5,7 @@
       "author": "JK 羅琳",
       "isbn": "654321",
       "description": "一位平凡男孩，在十一歲生日那天得知自己是巫師，並踏入神秘的霍格華茲魔法學院。在友情、冒險與黑魔法的交織下，他逐步揭開自己與最強黑巫師之間的命運連結。",
-      "coverImage": "img/book.jpg",
+      "coverImage": "/img/book.jpg",
       "tags": [
         "奇幻"
       ],

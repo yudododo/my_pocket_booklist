@@ -32,7 +32,7 @@ function App() {
             <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'center', alignItems: 'center' }}>
               <Box
                 component="img"
-                src="/img/banner_03.png"
+                src={`${process.env.PUBLIC_URL}/img/banner_03.png`}
                 alt="banner"
                 sx={{
                   width: '100%',
@@ -66,7 +66,7 @@ function App() {
               <Box sx={{ display: 'flex', flexDirection: { xs: 'row', md: 'column' }, p: 3, alignItems: 'center' }}>
                 <Box
                   component="img"
-                  src="/img/banner_01.png"
+                  src={`${process.env.PUBLIC_URL}/img/banner_01.png`}
                   alt="banner"
                   sx={{
                     width: {

@@ -2,7 +2,7 @@
   "name": "booklist-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ae24856.github.io/asgmt_week08_pwa",
+  "homepage": "https://ae24856.github.io/my_pocket_booklist",
   "dependencies": {
     "@apollo/client": "^3.13.8",
     "@apollo/react-hooks": "^4.0.0",
