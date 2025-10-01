@@ -18,55 +18,21 @@ const { ApolloServer, gql } = require('apollo-server');
 //     "description": "一場巴黎羅浮宮的神祕謀殺，牽引出隱藏在宗教與藝術中的重大祕密。符號學教授羅柏·蘭登與密碼專家蘇菲聯手破解層層線索，展開一場橫跨歐洲的驚險追尋。",
 //     "coverImage": "/img/book2.jpg",
 //     "tags": ["偵探"]
-//   },
-//   {
-//     "id": "3",
-//     "title": "白雪公主",
-//     "author": "abc",
-//     "isbn": "123456",
-//     "description": "一場巴黎羅浮宮的神祕謀殺，牽引出隱藏在宗教與藝術中的重大祕密。",
-//     "coverImage": "/img/book3.jpg",
-//     "tags": ["偵探", "愛情"]
-//   },
-//   {
-//     "id": "4",
-//     "title": "達文西密馬",
-//     "author": "abc",
-//     "isbn": "123456",
-//     "description": "一場巴黎羅浮宮的神祕謀殺，牽引出隱藏在宗教與藝術中的重大祕密。符號學教授羅柏·蘭登與密碼專家蘇菲聯手破解層層線索，展開一場橫跨歐洲的驚險追尋。",
-//     "coverImage": "/img/book4.jpg",
-//     "tags": ["偵探", "奇幻"]
 //   }
 // ];
 
-// API 的結構定義
+// -------------------------
+// GraphQL 的 Schema 定義
+// -------------------------
 const typeDefs = gql`
   type Book {
     id: ID!
     title: String!
-    author: String!
-    isbn: String!
+    author: String
+    isbn: String
     description: String
     coverImage: String
-    tags: [String!]
-  }
-
-  input AddBookInput {
-    title: String!
-    author: String!
-    isbn: String!
-    description: String
-    coverImage: String
-    tags: [String!]
-  }
-
-  input UpdateBookInput {
-    title: String!
-    author: String!
-    isbn: String!
-    description: String
-    coverImage: String
-    tags: [String!]
+    tags: [String]
   }
 
   type Query {
@@ -78,6 +44,24 @@ const typeDefs = gql`
     addBook(input: AddBookInput!): Book
     updateBook(id: ID!, input: UpdateBookInput!): Book
     deleteBook(id: ID!): Book
+  }
+
+  input AddBookInput {
+    title: String!
+    author: String
+    isbn: String
+    description: String
+    coverImage: String
+    tags: [String]
+  }
+
+  input UpdateBookInput {
+    title: String!
+    author: String
+    isbn: String
+    description: String
+    coverImage: String
+    tags: [String]
   }
 `;
 

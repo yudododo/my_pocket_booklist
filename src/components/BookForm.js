@@ -62,7 +62,7 @@ function BookForm() {
       <form onSubmit={handleSubmit}>
         <Stack spacing={2}>
           <TextField label="書名 Title" fullWidth value={title} onChange={e => setTitle(e.target.value)} required />
-          <TextField label="作者 Author" fullWidth value={author} onChange={e => setAuthor(e.target.value)} required />
+          <TextField label="作者 Author" fullWidth value={author} onChange={e => setAuthor(e.target.value)} />
           <TextField label="ISBN" fullWidth value={isbn} onChange={e => setIsbn(e.target.value)} />
           <TextField label="簡介 Description" multiline rows={3} fullWidth value={description} onChange={e => setDescription(e.target.value)} />
           <TextField label="封面 Cover Image URL" fullWidth value={coverImage} onChange={e => setCoverImage(e.target.value)} />
