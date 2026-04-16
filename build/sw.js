@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-globals */
 
 // 定義快取版本名稱，當需要更新快取時可以更改版本號
-const CACHE_NAME = 'book-app-cache-v1';
+const CACHE_NAME = 'book-app-cache-v2';
 
 // 定義需要預先快取的重要資源列表
 // 這些是應用程式運行所必需的檔案，會在 Service Worker 安裝時立即快取
